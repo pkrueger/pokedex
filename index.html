@@ -27,6 +27,13 @@
       crossorigin="anonymous"
       defer
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css"
+      integrity="sha512-fXnjLwoVZ01NUqS/7G5kAnhXNXat6v7e3M9PhoMHOTARUMCaf5qNO84r5x9AFf5HDzm3rEZD8sb/n6dZ19SzFA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -41,19 +48,62 @@
 
   <body>
     <header>
-      <nav
-        class="navbar navbar-dark navbar-expand bg-dark text-light no-select"
-      >
-        <a class="navbar-brand ms-3" href="#">
-          <span class="ms-2">Pokedex</span>
+      <nav class="navbar navbar-expand text-light no-select py-3">
+        <a class="navbar-brand" href="#">
+          <span class="text-white text-shadow title">Pokedex</span>
         </a>
+        <button class="my-pokemon-button me-4">
+          <i class="mdi mdi-pokeball fs-4 me-2"></i><span>My Pokemon</span>
+        </button>
       </nav>
     </header>
     <main>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-12">
-            <div id="app"></div>
+          <div class="col-lg-8 p-5" id="activePokemon">
+            <div class="pokemon-viewer text-center">
+              <div class="outer">
+                <div class="inner fs-2">Seaking</div>
+              </div>
+              <img
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/119.png"
+                alt="Seaking"
+                class="img-fluid"
+              />
+              <div class="outer">
+                <div class="inner">
+                  <div class="row py-4 fs-2">
+                    <div class="col-md-6 my-4">Height: 4'03"</div>
+                    <div class="col-md-6 my-4">Weight: 86 lbs</div>
+                    <div class="col-md-6 my-4">Types: Water</div>
+                    <div class="col-md-6 mt-5">
+                      <button class="catch-button">
+                        <i class="mdi mdi-pokeball fs-4 me-2"></i
+                        ><span>Catch</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4" id="pokemonList">
+            <div class="pokemon-list-wrapper">
+              <ul>
+                <li>
+                  <i class="mdi mdi-pokeball fs-4 me-2"></i><span>Agumon</span>
+                </li>
+                <li>
+                  <i class="mdi mdi-pokeball fs-4 me-2"></i><span>Impon</span>
+                </li>
+                <li>
+                  <i class="mdi mdi-pokeball fs-4 me-2"></i><span>Elecmon</span>
+                </li>
+                <li>
+                  <i class="mdi mdi-pokeball fs-4 me-2"></i><span>Gaomon</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

@@ -1,4 +1,74 @@
 /* BASIC STYLES HERE */
+:root {
+  --drop-shadow: rgba(0, 0, 0, 0.4);
+  --theme-primary: #e93031;
+  --theme-secondary: #f8979c;
+}
+
 body {
   font-family: "Press Start 2P", cursive;
+  background-image: url(/assets/img/5818333.jpg);
+  background-size: cover;
+}
+
+.navbar {
+  background-color: var(--theme-primary);
+}
+
+.navbar-brand {
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+}
+
+.title {
+  text-shadow: 0.2rem 0.2rem var(--drop-shadow);
+}
+
+.my-pokemon-button {
+  background-color: white;
+  color: var(--theme-primary);
+  border: 0;
+  outline: 0;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  transition: filter 0.1s ease-in-out;
+  margin-left: auto;
+}
+
+.my-pokemon-button:active {
+  filter: brightness(85%);
+}
+
+.outer {
+  border: 0.2rem solid black;
+  background-color: var(--theme-primary);
+  border-radius: 0.2rem;
+  padding: 0 5rem;
+}
+
+.inner {
+  border: 0.3rem solid var(--theme-secondary);
+  background-color: white;
+}
+
+.catch-button {
+  background-color: transparent;
+  color: var(--theme-primary);
+  border: 0.2rem solid var(--theme-primary);
+  outline: 0;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  transition: filter 0.1s ease-in-out;
+  margin-left: auto;
+}
+
+.catch-button:active {
+  filter: brightness(85%);
+}
+
+ul {
+  list-style-type: none;
 }
