@@ -39,7 +39,7 @@ body {
 }
 
 .my-pokemon-button:active {
-  filter: brightness(85%);
+  filter: brightness(95%);
 }
 
 .outer {
@@ -55,7 +55,7 @@ body {
 }
 
 .catch-button {
-  background-color: transparent;
+  background-color: white;
   color: var(--theme-primary);
   border: 0.2rem solid var(--theme-primary);
   outline: 0;
@@ -66,12 +66,22 @@ body {
 }
 
 .catch-button:active {
-  filter: brightness(85%);
+  filter: brightness(95%);
 }
 
 ul {
   list-style-type: none;
   margin: 0;
+}
+
+li {
+  cursor: pointer;
+  user-select: none;
+  transition: filter 0.1s ease-in-out;
+}
+
+li:active {
+  filter: brightness(3);
 }
 
 .pokemon-list {
@@ -81,7 +91,7 @@ ul {
 }
 
 .pokemon-list-button {
-  background-color: transparent;
+  background-color: white;
   color: var(--theme-primary);
   border: 0.2rem solid var(--theme-primary);
   outline: 0;
@@ -89,4 +99,8 @@ ul {
   border-radius: 0.5rem;
   transition: filter 0.1s ease-in-out;
   margin-left: auto;
+}
+
+.pokemon-list-button:active {
+  filter: brightness(95%);
 }
