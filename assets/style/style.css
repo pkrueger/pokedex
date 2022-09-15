@@ -104,3 +104,7 @@ li:active {
 .pokemon-list-button:active {
   filter: brightness(95%);
 }
+
+.using-this-to-align {
+  color: transparent;
+}
