@@ -8,9 +8,10 @@ export class Pokemon {
     this.url = data.url;
   }
 
+  // prettier-ignore
   get PokemonListTemplate() {
     return /*html*/ `
-    <li class="d-flex justify-content-between align-items-center">
+    <li class="d-flex justify-content-between align-items-center" onclick="app.activePokemonController.getActive('${this.url.split('.co')[1]}')">
       <div>
         <i class="mdi mdi-pokeball fs-1 me-4"></i
         ><span class="text-capitalize">${this.name}</span>
