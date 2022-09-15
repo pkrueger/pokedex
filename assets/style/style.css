@@ -54,6 +54,10 @@ body {
   background-color: white;
 }
 
+img {
+  min-height: 50vh;
+}
+
 .catch-button {
   background-color: white;
   color: var(--theme-primary);
@@ -109,4 +113,5 @@ li:active {
 
 .using-this-to-align {
   color: transparent;
+  width: 0;
 }

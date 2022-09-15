@@ -6,7 +6,7 @@ class PokemonService {
   async getPokemon() {
     const res = await PokemonServer.get("/api/v2/pokemon", {
       params: {
-        limit: 904,
+        limit: 151,
         offset: 0,
       },
     });
