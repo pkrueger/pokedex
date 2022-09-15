@@ -88,6 +88,8 @@ li:active {
   background-color: white;
   border: 0.2rem solid black;
   border-radius: 0.5rem;
+  max-height: 80vh;
+  overflow: auto;
 }
 
 .pokemon-list-button {
